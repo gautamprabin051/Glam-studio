@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Also enable clicking the card itself to open lightbox
-  document.querySelectorAll('.portfolio-card').forEach(card => {
+  // Also enable clicking the card/box itself to open lightbox
+  document.querySelectorAll('.portfolio-card, .portfolio-box').forEach(card => {
     card.addEventListener('click', () => {
       const trigger = card.querySelector('.lightbox-trigger');
       if (trigger) {
